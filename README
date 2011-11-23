@@ -1,0 +1,14 @@
+In order for this to work, fill out the required constants in config.php
+
+Once done, you must retrieve your OAuth token and OAuth token secret.
+To do so, first generate move miso.php to a web accessible directory. Visit
+miso.php, which will retrieve your application token and place it in a file, as
+defined by MISO_TOKEN_FILE.
+
+The first string will be your OAuth Token and the second your OAuth Token
+secret. Add this to your config.php (MISO_OAUTH_TOKEN, MISO_OAUTH_TOKEN_SECRET)
+
+Ensure you have created your database. The database user will only need SELECT
+and INSERT privileges.
+
+You can then run pollPlex.php (either manully or via a cron job).
